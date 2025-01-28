@@ -1,16 +1,15 @@
 export const TarjetaUsuario = ({nombre, edad, ocupacion}) => {
     
-    const edadError = true;
 
     return ( 
         <>
         <div className="Tarjeta">
         <p>Mi nombre es {nombre}</p>
         
-        <p>Tengo {edad} años</p>
+        {edad && <p>Mi edad es: {edad}</p>}
         
-        <p>Me dedico a {ocupacion}</p>
+        <p>Me dedico a {ocupacion ? ocupacion : "nada"}</p>
         </div>
         </>
-     );
+    );
 }
