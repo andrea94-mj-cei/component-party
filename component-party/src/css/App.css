@@ -30,3 +30,30 @@
   padding: 0.5rem;
   border-radius: 8px;
 }
+
+.alert-box {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.alert-error {
+  background-color: yellow;
+  color: black;
+  font-weight: 500;
+}
+
+.alert-warning {
+  background-color: orange;
+  color: black;
+  font-weight: 500;
+}
+.alert-success {
+  background-color: red;
+  color: black;
+  font-weight: 500;
+}
+

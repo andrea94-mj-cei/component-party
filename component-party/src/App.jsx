@@ -36,6 +36,8 @@ import './css/App.css'
       { src: "https://rickandmortyapi.com/api/character/avatar/3.jpeg", alt: "Summer Smith" }
       ];
 
+      const {status, children} = AlertBox;
+
 
   function App() {
 
@@ -64,7 +66,9 @@ import './css/App.css'
     </BlogPost>
 
     <h3>Actividad: AlertBox</h3>
-    <AlertBox/>
+    <AlertBox status="error">¡Tienes un error!</AlertBox>
+    <AlertBox status="warning">¡Peligro!</AlertBox>
+    <AlertBox status="success">¡Has destrozado tu código!</AlertBox>
 
     </>
 
