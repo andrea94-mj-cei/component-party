@@ -8,6 +8,7 @@ const ListaTareas = ({tareas}) => {
         ))}
         </>
      )
+     
 }
  
 export default ListaTareas;

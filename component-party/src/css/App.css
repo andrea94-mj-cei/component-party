@@ -11,4 +11,22 @@
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
+  margin: 1rem auto;
+}
+
+.Card{
+  background-color: red;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.Img-card{
+  width: 300px;
+  border-radius: 8px;
+}
+
+.Card-blog{
+  width: 50vh;
+  background-color: orange;
+  padding: 0.5rem;
+  border-radius: 8px;
 }
