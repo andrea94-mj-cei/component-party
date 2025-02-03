@@ -6,6 +6,13 @@ import ListaTareas from './components/tareas/ListaTareas'
 import {TarjetaUsuario} from './components/TarjetaUsuario'
 import './css/App.css'
 
+
+//importar componentes
+import Contador from './components/estados/Contador';
+import Interruptor from './components/estados/Interruptor';
+import Interruptor2 from './components/estados/Interruptor2';
+import ListaDeTareas from './components/estados/ListaDeTareas';
+
   //Actividad 2
   const tareas = [
     { id: 1, nombre: 'Estudiar React', completada: true },
@@ -40,7 +47,7 @@ import './css/App.css'
 
 
   function App() {
-
+        
   return (
     <>
     <h2>Actividad 1: Tarjeta de Usuario</h2>
@@ -70,6 +77,16 @@ import './css/App.css'
     <AlertBox status="warning">¡Peligro!</AlertBox>
     <AlertBox status="success">¡Has destrozado tu código!</AlertBox>
 
+    {/* //Contador con useState */}
+    <Contador />
+
+    {/* //Botón encendido/apagado con useState */}
+    <Interruptor />
+    <br />
+    <Interruptor2 />
+
+    {/* Lista de tareas */}
+    <ListaDeTareas />
     </>
 
    
