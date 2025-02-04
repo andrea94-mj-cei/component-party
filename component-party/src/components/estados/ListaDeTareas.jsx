@@ -7,7 +7,15 @@ const ListaDeTareas = () => {
     const [listaTareas, setListaTareas] = useState([""]);
 
     const handleAgregarTarea = () => {
-        setListaTareas([...listaTareas, tarea]);
+
+        //versión poco segura (puede que no funcione correctamente)
+        // setListaTareas(prevState)([...prevState, tarea]);
+
+        //si mi estado depende del estado previo, utilizamos una función de callback
+        setListaTareas((prevState) => [...prevState, tarea]);
+
+        //como no depende del estado anterior, podemos actualizarlo directamente
+        setTarea("");
     }
 
     return ( 
@@ -21,12 +29,14 @@ const ListaDeTareas = () => {
         />
         <br />
         <p>La tarea es: {tarea}</p>
+        <ul>
         <button onClick={() => handleAgregarTarea("")}>Agregar tarea</button>
         {
             listaTareas.map((t, i)=>(
                 <li key={i}>{t}</li>
             ))
         }
+        </ul>
         </>
      );
 }

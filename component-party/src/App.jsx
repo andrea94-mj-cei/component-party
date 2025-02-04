@@ -1,9 +1,9 @@
 import AlertBox from './components/AlertBox';
 import BlogPost from './components/BlogPost';
-import GaleriaDeImagenes from './components/GaleriaDeImagenes';
 import PerfilUsuario from './components/PerfilUsuario';
-import ListaTareas from './components/tareas/ListaTareas'
-import {TarjetaUsuario} from './components/TarjetaUsuario'
+import ListaTareas from './components/tareas/ListaTareas';
+import GaleriaDeImagenes from './components/GaleriaDeImagenes';
+import {TarjetaUsuario} from './components/TarjetaUsuario';
 import './css/App.css'
 
 
@@ -12,6 +12,9 @@ import Contador from './components/estados/Contador';
 import Interruptor from './components/estados/Interruptor';
 import Interruptor2 from './components/estados/Interruptor2';
 import ListaDeTareas from './components/estados/ListaDeTareas';
+import Formulario from './components/estados/Formulario';
+import GaleriaImagenes from './components/estados/GaleriaDeImagenes';
+
 
   //Actividad 2
   const tareas = [
@@ -77,16 +80,24 @@ import ListaDeTareas from './components/estados/ListaDeTareas';
     <AlertBox status="warning">¡Peligro!</AlertBox>
     <AlertBox status="success">¡Has destrozado tu código!</AlertBox>
 
-    {/* //Contador con useState */}
-    <Contador />
+    {/* ACTIVIDADES CON USE STATE */}
 
-    {/* //Botón encendido/apagado con useState */}
+    {/* //Contador */}
+    <Contador />
+ 
+    {/* //Botón encendido/apagado */}
     <Interruptor />
     <br />
     <Interruptor2 />
 
     {/* Lista de tareas */}
     <ListaDeTareas />
+
+    {/* Formulario */}
+    <Formulario/>
+
+    {/* Galería de imágenes */}
+    <GaleriaImagenes/>
     </>
 
    
