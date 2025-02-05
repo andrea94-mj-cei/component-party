@@ -6,14 +6,19 @@ import GaleriaDeImagenes from './components/GaleriaDeImagenes';
 import {TarjetaUsuario} from './components/TarjetaUsuario';
 import './css/App.css'
 
+//importar componentes (useState)
+import Contador from './components/usestate/Contador';
+import Interruptor from './components/usestate/Interruptor';
+import Interruptor2 from './components/usestate/Interruptor2';
+import ListaDeTareas from './components/usestate/ListaDeTareas';
+import Formulario from './components/usestate/Formulario';
+import GaleriaImagenes from './components/usestate/GaleriaDeImagenes';
+import Adivinanza from './components/usestate/Adivinanza';
+import ContadorTexto from './components/usestate/ContadorTexto';
+import Calculadora from './components/usestate/Calculadora';
 
-//importar componentes
-import Contador from './components/estados/Contador';
-import Interruptor from './components/estados/Interruptor';
-import Interruptor2 from './components/estados/Interruptor2';
-import ListaDeTareas from './components/estados/ListaDeTareas';
-import Formulario from './components/estados/Formulario';
-import GaleriaImagenes from './components/estados/GaleriaDeImagenes';
+//importar componentes (useEffect)
+import { Temporizador } from './components/useEffect/Temporizador';
 
 
   //Actividad 2
@@ -98,6 +103,22 @@ import GaleriaImagenes from './components/estados/GaleriaDeImagenes';
 
     {/* Galería de imágenes */}
     <GaleriaImagenes/>
+
+    {/* Adivinanza */}
+    <Adivinanza/>
+
+    {/* Contador de texto */}
+    <ContadorTexto/>
+
+    {/* Calculadora */}
+    <Calculadora/>
+
+
+
+    {/* ACTIVIDADES CON useEffect */}
+
+    {/* Temporizador */}
+    <Temporizador/>
     </>
 
    
