@@ -19,6 +19,12 @@ import Calculadora from './components/usestate/Calculadora';
 
 //importar componentes (useEffect)
 import { Temporizador } from './components/useEffect/Temporizador';
+import Saludar from './components/useEffect/Saludar';
+import TiempoDeVida from './components/useEffect/TiempoDeVida';
+import TraerPost from './components/useEffect/TraerPost';
+import RegistrarTamañoVentana from './components/useEffect/RegistrarTamañoVentana';
+import { Montar } from './components/useEffect/Montar';
+
 
 
   //Actividad 2
@@ -119,6 +125,21 @@ import { Temporizador } from './components/useEffect/Temporizador';
 
     {/* Temporizador */}
     <Temporizador/>
+
+    {/* Mensaje en consola */}
+    <Saludar/>
+
+    {/* Tiempo de vida */}
+    <TiempoDeVida/>
+
+    {/* Traer Post de una API */}
+    <TraerPost/>
+
+    {/* Tamaño de ventana */}
+    <RegistrarTamañoVentana/>
+
+    {/* Componente Padre e Hijo */}
+    <Montar/>
     </>
 
    
