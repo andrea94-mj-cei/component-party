@@ -1,0 +1,24 @@
+.carousel{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container{
+    /* position: absolute; */
+    display: flex;
+}
+.carousel-slide{
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.carousel-slide img{
+    width: 100%;
+    display: block;
+}
+/* .carousel-controls{
+    position: absolute;
+}
+.carousel-indicators{
+    position: absolute;
+} */

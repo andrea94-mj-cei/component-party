@@ -25,6 +25,9 @@ import TraerPost from './components/useEffect/TraerPost';
 import RegistrarTamañoVentana from './components/useEffect/RegistrarTamañoVentana';
 import { Montar } from './components/useEffect/Montar';
 
+//Carrousel
+import { Carrousel } from './components/carrousel/Carrousel';
+
 
 
   //Actividad 2
@@ -58,6 +61,14 @@ import { Montar } from './components/useEffect/Montar';
       ];
 
       const {status, children} = AlertBox;
+
+    //Carrousel
+    const imageCarrousel = [
+      {src: "https://dummyjson.com/image/400x200/008080/ffffff?text=Hello+1"},
+      {src: "https://dummyjson.com/image/400x200/008080/ffffff?text=Hello+2"},
+      {src: "https://dummyjson.com/image/400x200/008080/ffffff?text=Hello+3"},
+      
+  ]
 
 
   function App() {
@@ -140,6 +151,10 @@ import { Montar } from './components/useEffect/Montar';
 
     {/* Componente Padre e Hijo */}
     <Montar/>
+
+    {/* ACTIVIDAD CARROUSEL */}
+    <Carrousel imgList={imageCarrousel}/>
+    <Carrousel imgList={imageCarrousel} autoPlay/>
     </>
 
    
