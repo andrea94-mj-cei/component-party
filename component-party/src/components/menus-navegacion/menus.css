@@ -1,0 +1,31 @@
+
+/* HORIZONTAL */
+.h-menu ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.h-menu li{
+    margin: 0 auto;
+}
+
+.h-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.h-menu a:hover{
+    color: #128e7f;
+}
+
+/* VERTICAL */
+.v-menu ul{
+    list-style-type: none;
+}
+.v-menu li{
+    list-style-type: none;
+}
+.v-menu a{
+
+}

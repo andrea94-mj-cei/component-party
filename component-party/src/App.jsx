@@ -28,6 +28,11 @@ import { Montar } from './components/useEffect/Montar';
 //Carrousel
 import { Carrousel } from './components/carrousel/Carrousel';
 
+// Menús de navegación
+import { MenuHorizontal } from '@/components/menus-navegacion/MenuHorizontal';
+import { MenuVertical } from '@/components/menus-navegacion/MenuVertical';
+import { MenuCategorias } from './components/menus-navegacion/MenuCategorias';
+
 
 
   //Actividad 2
@@ -70,12 +75,51 @@ import { Carrousel } from './components/carrousel/Carrousel';
       
   ]
 
+    //MENUS DE NAVEGACION
+    const menuItems = [
+      { label: "Home", url: "/"},
+      { label: "Configuración", url: "/config"},
+      { label: "Ayuda", url: "/support"}
+
+    ]
+
+    //fontawesome (librería para iconos) https://fontawesome.com/
+    //para poder usarlo hay que instalar la librería (bucarlo en cdn font-awesome) y pegar el link en el html
+
+    const menuCategorias = [
+      {
+        name: "Home",
+        icon: "fa-tachometer-alt",
+        items: [
+          {label: "Dashboard", url: "./dashboard"},
+          {label: "Reportes", url: "./reports"},
+        ]
+      },
+      {
+        name: "Configuracion",
+        icon: "fa-cog",
+        items: [
+          {label: "Perfil", url: "./profile"},
+          {label: "Tu cuenta", url: "./account"},
+        ]
+      },
+      {
+        name: "Ayuda",
+        icon: "fa-question-circle",
+        items: [
+          {label: "FAQ", url: "./faq"},
+          {label: "Soporte", url: "./support"},
+        ]
+      },
+      
+    ]
+
 
   function App() {
         
   return (
     <>
-    <h2>Actividad 1: Tarjeta de Usuario</h2>
+    {/* <h2>Actividad 1: Tarjeta de Usuario</h2>
     <TarjetaUsuario nombre="Andrea" edad="30" ocupacion="estudiar"/>
     <TarjetaUsuario nombre="Margarita" edad="23"/>
     <TarjetaUsuario nombre="David" ocupacion="trabajar"/>
@@ -105,56 +149,67 @@ import { Carrousel } from './components/carrousel/Carrousel';
     {/* ACTIVIDADES CON USE STATE */}
 
     {/* //Contador */}
-    <Contador />
+    {/* <Contador /> */}
  
     {/* //Botón encendido/apagado */}
-    <Interruptor />
+    {/* <Interruptor /> */}
     <br />
-    <Interruptor2 />
+    {/* <Interruptor2 /> */}
 
     {/* Lista de tareas */}
-    <ListaDeTareas />
+    {/* <ListaDeTareas /> */}
 
     {/* Formulario */}
-    <Formulario/>
+    {/* <Formulario/> */}
 
     {/* Galería de imágenes */}
-    <GaleriaImagenes/>
+    {/* <GaleriaImagenes/> */}
 
     {/* Adivinanza */}
-    <Adivinanza/>
+    {/* <Adivinanza/> */}
 
     {/* Contador de texto */}
-    <ContadorTexto/>
+    {/* <ContadorTexto/> */}
 
     {/* Calculadora */}
-    <Calculadora/>
+    {/* <Calculadora/> */}
 
 
 
     {/* ACTIVIDADES CON useEffect */}
 
     {/* Temporizador */}
-    <Temporizador/>
+    {/* <Temporizador/> */}
 
     {/* Mensaje en consola */}
-    <Saludar/>
+    {/* <Saludar/> */}
 
     {/* Tiempo de vida */}
-    <TiempoDeVida/>
+    {/* <TiempoDeVida/> */}
 
     {/* Traer Post de una API */}
-    <TraerPost/>
+    {/* <TraerPost/> */}
 
     {/* Tamaño de ventana */}
-    <RegistrarTamañoVentana/>
+    {/* <RegistrarTamañoVentana/> */}
 
     {/* Componente Padre e Hijo */}
-    <Montar/>
+    {/* <Montar/> */}
 
     {/* ACTIVIDAD CARROUSEL */}
-    <Carrousel imgList={imageCarrousel}/>
-    <Carrousel imgList={imageCarrousel} autoPlay/>
+    {/* <Carrousel imgList={imageCarrousel}/>
+    <Carrousel imgList={imageCarrousel} autoPlay/> */} 
+
+    {/* MENUS DE NAVEGACIÓN */}
+    {/* <MenuHorizontal items={menuItems}/> */}
+
+    {/* <MenuVertical items={menuItems}/> */}
+    
+    <MenuCategorias items={menuCategorias}/>
+    {/* <i className='fas fa-cog'></i> */}
+    {/* <i className='fas fa-tachometer-alt'></i>
+    <i className='fas fa-question-circle'></i> */}
+
     </>
 
    

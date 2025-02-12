@@ -4,6 +4,7 @@ import "./carrousel.css"
 export const Carrousel = ({ imgList, autoPlay=false }) => {
 
     const [indice, setIndice] = useState(0);
+    const [isPaused, setIsPused] = useState(false);
 
     useEffect( ()=>{
         console.log("useEffect")
@@ -17,7 +18,7 @@ export const Carrousel = ({ imgList, autoPlay=false }) => {
             clearInterval(indice);
         }
 
-   }, [indice, autoPlay] );
+   }, [indice, autoPlay, isPaused] );
 
     const handleAnterior = () =>{
         const newIndex = (indice === 0) ? imgList.length -1 : indice -1;
@@ -35,7 +36,7 @@ export const Carrousel = ({ imgList, autoPlay=false }) => {
     return (
         <>
             <h2>Carrousel</h2>
-            {/* Para el último paso, poner: onMouseEnter y onMouseLeave */}
+            
             <div className="carousel" >
                 <div className="carousel-container" style={{ transform: `translateX(-${indice*100}%)` }}>
                     {
