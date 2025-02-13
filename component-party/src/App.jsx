@@ -32,6 +32,7 @@ import { Carrousel } from './components/carrousel/Carrousel';
 import { MenuHorizontal } from '@/components/menus-navegacion/MenuHorizontal';
 import { MenuVertical } from '@/components/menus-navegacion/MenuVertical';
 import { MenuCategorias } from './components/menus-navegacion/MenuCategorias';
+import { MenuTomi } from './components/menu-tomi/MenuTomi';
 
 
 
@@ -205,10 +206,13 @@ import { MenuCategorias } from './components/menus-navegacion/MenuCategorias';
 
     {/* <MenuVertical items={menuItems}/> */}
     
-    <MenuCategorias items={menuCategorias}/>
+    {/* <MenuCategorias items={menuCategorias}/> */}
     {/* <i className='fas fa-cog'></i> */}
     {/* <i className='fas fa-tachometer-alt'></i>
     <i className='fas fa-question-circle'></i> */}
+
+    {/* MENU TOMI */}
+    <MenuTomi itemsCategorias = {menuCategorias}/>
 
     </>
 

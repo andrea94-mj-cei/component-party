@@ -1,6 +1,8 @@
+import {useState} from 'react'
+
 export const MenuCategorias = ({items}) => {
 
-
+    const [isOpen, setIsOpen] = useState(false)
 
     return ( 
         <>
